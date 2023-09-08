@@ -45,7 +45,8 @@ nav ul li{
     margin:20px auto;
     border-radius:20px;
     padding:20px;
-    background-image: url(image.jpg);
+    /* background-image: url(C:\Users\Amit Verma\Desktop\github site\spotify-clone\image.jpg); */
+    background-repeat: no-repeat;
 }
 .songItem{
     display: flex;
@@ -89,6 +90,7 @@ nav ul li{
 #myProgressBar{
     width:80vw;
     margin-top:10px;
+    cursor: pointer;
 }
 
 .icons{
@@ -99,10 +101,13 @@ nav ul li{
     margin:0 15px;
 }
 .songInfo{
-    display: flex;
-    align-items: flex-start;
-    left:120px;
-    bottom:35px;
-    position:relative;
+    left:-24vw;
+    bottom:20px;
+    position:absolute;
     width:80%;
+    font-family: 'Varala Round', sans-serif;
+}
+.songInfo img{
+    opacity:0;
+    transition: opacity 1s ease-in;
 }
